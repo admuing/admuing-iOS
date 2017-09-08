@@ -56,7 +56,7 @@ Go to the [registered address](http://register.admuing.com/) to apply for an app
  
 * Remove the barrage at the end of the video play.
 
-	```
+ ```
    [[ADmuingDMManager shareDMInstance] stop];
  ```
 
