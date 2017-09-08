@@ -5,7 +5,6 @@
 
 AdMuing is a video advertising Danmaku enhancement tool,Is an open source project created by years of research google & facebbok creative team，The purpose is to change the existing video advertising style is single，the problem of globalization is difficult to solve，With AdMuing, just a few lines of code can make the original video ads more vivid, interesting and interactive，Enhance the quality of developers APP ad, so that video ads more attractive to users.
 
-
 ## Features
 Free：Completely free during use API，(Each key calls 10000 times per day because of server pressure)
 Open Source：Each line of code on the GitHub is visible, fully transparent, and there is no need to worry about malicious code calls
@@ -65,8 +64,6 @@ Go to the [registered address](http://register.admuing.com/) to apply for an app
 
 Current compatible ad platform：Unity、Vungle、AdTiming.Constantly update....
 Theory can support all video Ad SDK，But need to test， If need to support more platforms, please contact us.Our email is <font color=red>support@admuing.com</font>
-
-
  
 ## Support
 1. create an issue on the github issue page.
