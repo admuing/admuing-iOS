@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="V3J-MQ-QwB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Xbl-NY-5sd">
+            <objects>
+                <navigationController id="V3J-MQ-QwB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ct6-W5-n9K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FJX-Sf-xDm" kind="relationship" relationship="rootViewController" id="t54-el-XZZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38p-Ew-8L5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-938" y="-36"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q13-6P-o1G">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="FJX-Sf-xDm" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z6g-yu-UoD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ita-0G-V02"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2OJ-lh-ueP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JyO-4Q-VEr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="FJX-Sf-xDm" id="0K5-KN-ilx"/>
+                                    <outlet property="delegate" destination="FJX-Sf-xDm" id="GQS-UX-8h0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JyO-4Q-VEr" firstAttribute="top" secondItem="2OJ-lh-ueP" secondAttribute="top" id="8X8-gV-bRA"/>
+                            <constraint firstItem="Ita-0G-V02" firstAttribute="top" secondItem="JyO-4Q-VEr" secondAttribute="bottom" id="L3g-XJ-rqd"/>
+                            <constraint firstAttribute="trailing" secondItem="JyO-4Q-VEr" secondAttribute="trailing" id="RlP-Wr-gkz"/>
+                            <constraint firstItem="JyO-4Q-VEr" firstAttribute="leading" secondItem="2OJ-lh-ueP" secondAttribute="leading" id="q3V-ms-aEV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4xV-tx-rHt"/>
+                    <connections>
+                        <outlet property="tableView" destination="JyO-4Q-VEr" id="4az-LX-P2m"/>
+                        <segue destination="vR9-nA-rMR" kind="show" identifier="UnityVideo" id="gtP-KT-ohP"/>
+                        <segue destination="Zmg-eW-lX5" kind="show" identifier="VungleVideo" id="ZA9-72-Scg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tfn-ty-uxl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-225" y="-36"/>
+        </scene>
+        <!--Unity VideoVC-->
+        <scene sceneID="Yk0-BI-67Y">
+            <objects>
+                <viewController storyboardIdentifier="UnityVideoVC" id="vR9-nA-rMR" customClass="UnityVideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4wM-NP-lQY"/>
+                        <viewControllerLayoutGuide type="bottom" id="8dc-LL-lDx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PFy-RH-oyK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m74-ok-FLo">
+                                <rect key="frame" x="109" y="116" width="156" height="36"/>
+                                <color key="backgroundColor" red="0.018943687259573294" green="0.84979850163508042" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="ouO-g9-0gc"/>
+                                </constraints>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playBtn:" destination="vR9-nA-rMR" eventType="touchUpInside" id="sAf-9g-gDl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="m74-ok-FLo" secondAttribute="trailing" constant="110" id="GGb-XR-5KX"/>
+                            <constraint firstItem="m74-ok-FLo" firstAttribute="leading" secondItem="PFy-RH-oyK" secondAttribute="leading" constant="109" id="oQP-Mh-wGN"/>
+                            <constraint firstItem="m74-ok-FLo" firstAttribute="top" secondItem="4wM-NP-lQY" secondAttribute="bottom" constant="52" id="y1C-Ua-Wae"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="m74-ok-FLo" id="9pL-SZ-6pL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="04x-Gv-8vA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613.60000000000002" y="-342.27886056971516"/>
+        </scene>
+        <!--Vungle VideoVC-->
+        <scene sceneID="b1X-ma-FMG">
+            <objects>
+                <viewController storyboardIdentifier="VungleVideoVC" id="Zmg-eW-lX5" customClass="VungleVideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QFU-aK-Dbj"/>
+                        <viewControllerLayoutGuide type="bottom" id="2zt-dw-Pyv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PqC-OA-S0O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6U-1a-9DW">
+                                <rect key="frame" x="83" y="130" width="209" height="32"/>
+                                <color key="backgroundColor" red="0.11454013740000001" green="0.69421511889999998" blue="0.4785906076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="JIq-x8-VEU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Init SDK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startVungle:" destination="Zmg-eW-lX5" eventType="touchUpInside" id="5hD-jr-zAG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq1-Mw-WsE">
+                                <rect key="frame" x="106" y="201" width="162" height="32"/>
+                                <color key="backgroundColor" red="0.23862642049999999" green="0.56028372049999997" blue="0.78003120420000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="g5Y-aH-uoB"/>
+                                    <constraint firstAttribute="height" constant="32" id="nqb-Zm-EdA"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="178" id="oce-Ij-DLD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showAdForPlacement01" destination="Zmg-eW-lX5" eventType="touchUpInside" id="tdP-he-Utr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fq1-Mw-WsE" secondAttribute="trailing" constant="91" id="7yu-Nr-0Wi"/>
+                            <constraint firstItem="X6U-1a-9DW" firstAttribute="leading" secondItem="PqC-OA-S0O" secondAttribute="leading" constant="83" id="DRU-OO-D80"/>
+                            <constraint firstItem="X6U-1a-9DW" firstAttribute="top" secondItem="QFU-aK-Dbj" secondAttribute="bottom" constant="66" id="FAi-5c-ATe"/>
+                            <constraint firstItem="fq1-Mw-WsE" firstAttribute="top" secondItem="X6U-1a-9DW" secondAttribute="bottom" constant="39" id="e3m-iL-W4z"/>
+                            <constraint firstItem="fq1-Mw-WsE" firstAttribute="leading" secondItem="PqC-OA-S0O" secondAttribute="leadingMargin" constant="90" id="hE4-y2-5Tg"/>
+                            <constraint firstAttribute="trailing" secondItem="X6U-1a-9DW" secondAttribute="trailing" constant="83" id="jdo-jK-Pam"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton1" destination="fq1-Mw-WsE" id="0Ko-RQ-aAb"/>
+                        <outlet property="sdkInitButton" destination="X6U-1a-9DW" id="hUM-rw-e8v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ixc-s1-jMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613.60000000000002" y="348.57571214392806"/>
+        </scene>
+    </scenes>
+</document>
