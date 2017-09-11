@@ -2,7 +2,7 @@
 
 这里是iOS版本说明，android的在[这里](https://github.com/admuing/admuing-android)。
 
-[英文版说明](admuing-iOS/README.md)
+[英文版说明](https://github.com/admuing/admuing-iOS)
 
 ## 关于
 

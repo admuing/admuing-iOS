@@ -2,7 +2,7 @@
 
 This is iOS version， Android is [here](https://github.com/admuing/admuing-android)
 
-[中文版说明](admuing-iOS/README_CN.md)
+[中文版说明](https://github.com/admuing/admuing-iOS/blob/master/README_CN.md)
 
 ## About
 
