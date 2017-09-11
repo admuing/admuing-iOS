@@ -10,9 +10,12 @@ AdMuing是一个视频广告弹幕增强工具，是由多年研究Google,Facebo
 
 ## Demo 
 
-源码：请下载当前项目，查看admuing文件夹。
+![img](IMG/i1.jpg)
 
-demo：这个demo包含了在unity和vungle SDK中的使用示例。
+![img](IMG/i2.png)
+
+* 源码：请下载当前项目，查看admuing文件夹。
+* demo：这个demo包含了在unity和vungle SDK中的使用示例。
 
 ## 特色
 
