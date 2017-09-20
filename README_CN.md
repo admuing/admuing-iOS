@@ -31,7 +31,7 @@ AdMuing是一个视频广告弹幕增强工具，是由多年研究Google,Facebo
 
 #### 申请一个key
 
-到 [这里](http://register.admuing.com/) 注册一个账号，获取appkey.
+到 [这里](http://register.admuing.com/?recom=github) 注册一个账号，获取appkey.
 
 
 #### Usage
